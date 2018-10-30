@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока presentation, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.presentation {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__media {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  &__info {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    padding-left: 110px;
+    max-width: 700px;
+
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: $line-height;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: $line-height;
+  }
+
+}
