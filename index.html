@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Новые строительные технологии</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <a href="#" class="logo">
+            <img src="img/logo.png" alt="Новые строительные технологии">
+          </a>
+          <div class="page-header__content">
+            <div class="page-header__contacts">
+              <div class="contact-item contact-item__phone">+7(4712) 446-700</div>
+              <div class="contact-item contact-item__email">info@nst46.ru</div>
+            </div>
+            <div class="page-header__menu">
+              <nav id="main-nav" class="main-nav" role="navigation">
+                <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--active">
+                    <a href="#" class="main-nav__link">
+                      Наши объекты
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                      Продукты и услуги
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                      Отзывы
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="social">
+                <div class="social__item">
+                  <a href="#" class="social__link">
+                    <div class="icon icon-viber"></div>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link">
+                    <div class="icon icon-whatsapp"></div>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" class="social__link">
+                    <div class="icon icon-telegram"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <section class="intro" style="background-image: url('img/inner-img-01.jpg');">
+        <div class="intro__inner">
+          <div class="intro__part-left">
+            <h1 class="intro__title">Поручите заботы о вашем строительном проекте профессионалам!</h1>
+            <a href="#" class="intro__more-link">Узнайте больше о нас</a>
+          </div>
+          <div class="intro__part-right">
+            <div class="intro__tz">
+              <h2>Техзадание</h2>
+              <ul>
+                <li>Помогаем Вам составить ТЗ и задание на проектирование</li>
+                <li>Разрабатываем совместно с Вами концепцию проекта</li>
+                <li>Готовим визуализацию объектов</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div class="main-section__header">
+          <h1 class="main-section__title">Наши объекты</h1>
+        </div>
+        <div class="objects-grid__wrap">
+          <div class="objects-grid">
+            <div class="objects-card">
+              <img class="objects-card__image" src="img/objects-card-img-01.jpg" alt="">
+              <div class="objects-card__info">
+                <h5 class="objects-card__title">Конно-спортивный комплекс</h5>
+                <ul>
+                  <li>Монтаж ограждающих конструкций</li>
+                  <li>Изготовление и монтаж алюминиевых витражных конструкций</li>
+                  <li>Изготовление и монтаж декоративных фрхитектурных форм</li>
+                </ul>
+                <a href="#" class="objects-card__more-link">
+                  На страницу объекта
+                </a>
+              </div>
+            </div>
+            <div class="objects-card">
+              <img class="objects-card__image" src="img/objects-card-img-02.jpg" alt="">
+              <div class="objects-card__info">
+                <h5 class="objects-card__title">Гипермаркеты «Линия»</h5>
+                <ul>
+                  <li>Монтаж ограждающих конструкций</li>
+                  <li>Изготовление и монтаж алюминиевых витражных конструкций</li>
+                  <li>Изготовление и монтаж декоративных фрхитектурных форм</li>
+                </ul>
+                <a href="#" class="objects-card__more-link">
+                  На страницу объекта
+                </a>
+              </div>
+            </div>
+            <div class="objects-card">
+              <img class="objects-card__image" src="img/objects-card-img-03.jpg" alt="">
+              <div class="objects-card__info">
+                <h5 class="objects-card__title">Складской комплекс по ул. ухтомского</h5>
+                <ul>
+                  <li>Монтаж ограждающих конструкций</li>
+                  <li>Изготовление и монтаж алюминиевых витражных конструкций</li>
+                  <li>Изготовление и монтаж декоративных фрхитектурных форм</li>
+                </ul>
+                <a href="#" class="objects-card__more-link">
+                  На страницу объекта
+                </a>
+              </div>
+            </div>
+            <div class="objects-card">
+              <img class="objects-card__image" src="img/objects-card-img-04.jpg" alt="">
+              <div class="objects-card__info">
+                <h5 class="objects-card__title">Средняя общеобразовательная школа</h5>
+                <ul>
+                  <li>Монтаж ограждающих конструкций</li>
+                  <li>Изготовление и монтаж алюминиевых витражных конструкций</li>
+                  <li>Изготовление и монтаж декоративных фрхитектурных форм</li>
+                </ul>
+                <a href="#" class="objects-card__more-link">
+                  На страницу объекта
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="objects-grid objects-grid--xl">
+            <div class="objects-card objects-card--xl">
+              <img class="objects-card__image" src="img/objects-card-img-05.jpg" alt="">
+              <div class="objects-card__info">
+                <h5 class="objects-card__title">Отель «Аквамарин»</h5>
+                <ul>
+                  <li>Монтаж ограждающих конструкций</li>
+                  <li>Изготовление и монтаж алюминиевых витражных конструкций</li>
+                  <li>Изготовление и монтаж декоративных фрхитектурных форм</li>
+                </ul>
+                <a href="#" class="objects-card__more-link">
+                  На страницу объекта
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--presentation">
+        <div class="presentation">
+          <div class="presentation__media">
+            <div class="embed-responsive">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/HNpLuXOg7xQ" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="presentation__info">
+            <div class="presentation__text">
+              <h4 class="presentation__title">Презентация проекта туристического комплекса «Родина»</h4>
+              <p>Цель проекта: организация современного туристического комплекса в Рыльском районе Курской области.</p>
+              <p>Идея проекта — дать возможность современному человеку интересно, активно и содержательно провести свое свободное время в гармонии с природой, при этом рассчитывая на привычный ему уровень комфорта.</p>
+              <a href="#" class="btn btn--main-outline">Подробнее о проекте</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section main-section--offer">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h1 class="main-section__title">Мы предлагаем эффективные решения</h1>
+          </div>
+          <div class="offer">
+            <div class="offer__card">
+              <div class="offer__icon">
+                <div class="icon icon-professional"></div>
+              </div>
+              <div class="offer__caption">Профессиональный <br> строительный консалтинг</div>
+            </div>
+            <div class="offer__card">
+              <div class="offer__icon">
+                <div class="icon icon-calendar"></div>
+              </div>
+              <div class="offer__caption">Прозрачные сроки <br> производства работ</div>
+            </div>
+            <div class="offer__card">
+              <div class="offer__icon">
+                <div class="icon icon-graph"></div>
+              </div>
+              <div class="offer__caption">График <br> финансирования</div>
+            </div>
+            <div class="offer__card">
+              <div class="offer__icon">
+                <div class="icon icon-optomization"></div>
+              </div>
+              <div class="offer__caption">Сокращение затрат<br> за счет оптимизации <br> технологических решений</div>
+            </div>
+            <div class="offer__card">
+              <div class="offer__icon">
+                <div class="icon icon-practic"></div>
+              </div>
+              <div class="offer__caption">Применение <br> лучших практик</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h1 class="main-section__title">Новости</h1>
+          </div>
+          <div class="news-grid">
+            <div class="news-grid__wrap">
+              <div class="news-card">
+                <a href="#" class="news-card__inner">
+                  <div class="news-card__image">
+                    <img src="img/news-card-img-01.jpg" alt="">
+                  </div>
+                  <div class="news-card__body">
+                    <div class="news-card__title">Что пить?<br> или Гигантсткие проблемы маленьких городов</div>
+                    <div class="news-card__date">9 октября 2018 г.</div>
+                  </div>
+                </a>
+              </div>
+              <div class="news-card">
+                <a href="#" class="news-card__inner">
+                  <div class="news-card__image">
+                    <img src="img/news-card-img-02.jpg" alt="">
+                  </div>
+                  <div class="news-card__body">
+                    <div class="news-card__title">В ГД внесен проект <br> о разрешении дольщику <br> расторгать договор <br> с застройщиком</div>
+                    <div class="news-card__date">9 октября 2018 г.</div>
+                  </div>
+                </a>
+              </div>
+              <div class="news-card">
+                <a href="#" class="news-card__inner">
+                  <div class="news-card__image">
+                    <img src="img/news-card-img-03.jpg" alt="">
+                  </div>
+                  <div class="news-card__body">
+                    <div class="news-card__title">В Москве прошла вторая <br> церемония вручения премии <br> «Монтажник года»</div>
+                    <div class="news-card__date">9 октября 2018 г.</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="news-grid__more">
+              <a class="btn btn--main" href="#">Все новости</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <main role="main">
+
+        <h1>NTH start project</h1>
+
+
+        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+
+      </main> -->
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__top">
+            <div class="page-footer__part page-footer__part--main-list">
+              <ul class="page-footer__list-main">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="active"><a href="#">Новости</a></li>
+                <li><a href="#">Лицензии</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Социальная ответственность</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__part page-footer__part--list">
+              <div class="page-footer__box-list">
+                <h4 class="page-footer__title">Наши объекты</h4>
+                <ul class="page-footer__list">
+                  <li><a href="#">Коммерческая недвижимость</a></li>
+                  <li><a href="#">Промышленное строительство</a></li>
+                  <li><a href="#">Сельскохозяйственные объекты</a></li>
+                  <li><a href="#">Жилые здания</a></li>
+                </ul>
+              </div>
+              <div class="page-footer__box-list">
+                <h4 class="page-footer__title">Продукты и услуги</h4>
+                <ul class="page-footer__list">
+                  <li><a href="#">Стеклянные фасады</a></li>
+                  <li><a href="#">Вентилируемые фасады</a></li>
+                  <li><a href="#">Теплицы и тепличные комплексы</a></li>
+                  <li><a href="#">Строительный консалтинг</a></li>
+                  <li><a href="#">Реконструкция</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-footer__part page-footer__part-contacts">
+              <div class="page-footer__contacts">
+                <div class="contact-item contact-item__phone">+7(4712) 446-700</div>
+                <div class="contact-item contact-item__email">info@nst46.ru</div>
+                <div class="social">
+                  <div class="social__item">
+                    <a href="#" class="social__link">
+                      <div class="icon icon-viber"></div>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" class="social__link">
+                      <div class="icon icon-whatsapp"></div>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" class="social__link">
+                      <div class="icon icon-telegram"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__bottom">
+            <span>&copy; 2018 НСТ</span>
+            <span>Разработано в <a href="#">Showbiz</a></span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
