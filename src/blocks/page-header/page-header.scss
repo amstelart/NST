@@ -6,7 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  margin: 0 45px;
+  margin: 0 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,19 +14,52 @@
   border-bottom: 1px solid #80929f;
   z-index: 3;
 
+  @media (max-width: $screen-md) {
+    background: #334C65;
+    position: static;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 0 45px;
+  }
+
   &__inner {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
-    padding: 25px 0 40px;
+    padding: 25px 40px 40px 0;
+
+    @media (max-width: $screen-md) {
+      padding: 15px 0;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      flex-wrap: nowrap;
+      padding: 25px 0 40px;
+    }
   }
 
   .logo {
     flex-shrink: 0;
     margin-right: 30px;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 20px;
+      flex-shrink: 1;
+    }
   }
 
   &__content {
     flex-grow: 1;
+
+    @media (max-width: $screen-md) {
+
+      max-width: 100%;
+      flex-basis: 100%;
+    }
   }
 
   &__contacts {
@@ -35,18 +68,47 @@
     justify-content: flex-end;
     align-items: flex-end;
 
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+
     .contact-item {
       margin-left: 30px;
       font-weight: 400;
       margin-top: 0;
+
+      @media (max-width: $screen-md) {
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 15px;
+      }
     }
   }
+
+  // .social {
+  //
+  //   margin-left: auto;
+  //
+  //   @media (max-width: $screen-md) {
+  //     margin: inherit;
+  //     display: block;
+  //   }
+  // }
 
   &__menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 10px;
+
+    @media (max-width: $screen-md) {
+      display: block;
+
+      .social {
+        margin: auto;
+      }
+    }
   }
 
 }

@@ -7,22 +7,41 @@
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
+  flex-wrap: wrap;
 
   &__media {
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
   }
 
   &__info {
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
   }
 
   &__text {
-    padding-left: 110px;
     max-width: 700px;
+    padding-left: 20px;
+
+    @media (min-width: 1600px) {
+      padding-left: 110px;
+    }
+
+    @media (max-width: $screen-lg) {
+      @include container;
+    }
 
     p {
       font-size: 18px;
@@ -32,10 +51,14 @@
   }
 
   &__title {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: $line-height;
+
+    @media (min-width: $screen-lg) {
+      font-size: 32px;
+    }
   }
 
 }

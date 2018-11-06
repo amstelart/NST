@@ -17,15 +17,28 @@
   }
 
   &__title {
-    font-size: 48px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: 400;
     margin-top: $line-height;
     margin-bottom: $line-height;
-  }
+
+    @media (min-width: $screen-md) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 48px;
+    }
+
+   }
 
   &--presentation {
-    padding: 175px 0;
+    padding: 0 0 20px;
+
+    @media (min-width: $screen-lg) {
+      padding: 175px 0;
+    }
   }
 
   &--offer {

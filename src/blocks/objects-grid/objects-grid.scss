@@ -13,12 +13,22 @@
 
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 66.666%;
-  max-width: 66.666%;
+  flex-basis: 100%;
+  max-width: 100%;
+
+  @media (min-width: $screen-xl) {
+    flex-basis: 66.666%;
+    max-width: 66.666%;
+  }
 
   &--xl {
-    flex-basis: 33.333%;
-    max-width: 33.333%;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @media (min-width: $screen-xl) {
+      flex-basis: 33.333%;
+      max-width: 33.333%;
+    }
   }
 
 }
